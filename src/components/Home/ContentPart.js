@@ -28,10 +28,10 @@ function ContentPart() {
 
   const handleScroll = (e) => {
     console.log("CAMEE");
-    console.log(e.target.scrollHeight - e.target.scrollTop);
+    console.log((e.target.scrollHeight - e.target.scrollTop)-e.target.clientHeight);
     if (loading) return;
 
-    const bottom = e.target.scrollHeight - e.target.scrollTop < 637;
+    const bottom = e.target.scrollHeight - e.target.scrollTop - e.target.clientHeight <= 0;
     if (bottom) {
       setPage(page + 1);
       setLoading(true);
