@@ -19,7 +19,6 @@ function LoginPage() {
             e.target.formBasicPassword.value === "bar"
           ) {
             window.localStorage.setItem("LOGGEDIN", true);
-            setTimeout(() => {}, 500);
             navigate("/home", { replace: true });
           }
         }}

@@ -21,7 +21,6 @@ function Footer() {
       </div>
       <div style={innerContainer}>
         <h6>Contact&nbsp;</h6>
-        <h6>7906258880&nbsp;</h6>
         <h6>st8896464352@gmail.com&nbsp;</h6>
       </div>
     </div>
